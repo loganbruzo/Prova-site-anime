@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria de Personagens - Pokémon</title>
+  <link rel="stylesheet" href="foto.css">
+</head>
+<body>
+
+  <h1>Galeria de Personagens - Pokémon</h1>
+
+  <div class="gallery">
+    <!-- Personagem 1 -->
+    <div class="character" onclick="openModal('pikachu')">
+      <img src="imagens/1.webp" alt="Pikachu" class="character-image">
+    </div>
+
+    <!-- Personagem 2 -->
+    <div class="character" onclick="openModal('charizard')">
+      <img src="imagens/2.jpeg" alt="Charizard" class="character-image">
+    </div>
+
+    <!-- Personagem 3 -->
+    <div class="character" onclick="openModal('bulbasaur')">
+      <img src="imagens/3.jpg" alt="Bulbasaur" class="character-image">
+    </div>
+
+    <!-- Personagem 4 -->
+    <div class="character" onclick="openModal('jigglypuff')">
+      <img src="imagens/jingli.jpeg" alt="Jigglypuff" class="character-image">
+    </div>
+
+    <!-- Personagem 5 -->
+    <div class="character" onclick="openModal('squirtle')">
+      <img src="imagens/squertle.jpeg" alt="Squirtle" class="character-image">
+    </div>
+
+    <!-- Personagem 6 -->
+    <div class="character" onclick="openModal('eevee')">
+      <img src="imagens/evee.jpeg" alt="Eevee" class="character-image">
+    </div>
+
+    <!-- Personagem 7 -->
+    <div class="character" onclick="openModal('meowth')">
+      <img src="imagens/10.jpeg" alt="Meowth" class="character-image">
+    </div>
+
+    <!-- Personagem 8 -->
+    <div class="character" onclick="openModal('snorlax')">
+      <img src="imagens/8.jpeg" alt="Snorlax" class="character-image">
+    </div>
+
+    <!-- Personagem 9 -->
+    <div class="character" onclick="openModal('dragonite')">
+      <img src="imagens/9.jpeg" alt="Dragonite" class="character-image">
+    </div>
+
+    <!-- Personagem 10 -->
+    <div class="character" onclick="openModal('mewtwo')">
+      <img src="imagens/7.jpeg" alt="Mewtwo" class="character-image">
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">×</span>
+      <div id="modal-details"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria de Personagens - Pokémon</title>
+  <link rel="stylesheet" href="imagens/stylegaleria.css">
+</head>
+<body>
+
+  <h1>Detalhes de um personagem - Pokémon</h1>
+
+  <div class="gallery">
+    <!-- Personagem 1 -->
+    <div class="character" onclick="openModal('pikachu')">
+      <img src="imagens/pikachuuuu.png" alt="Pikachu" class="character-image">
+      <h2>Pikachu</h2>
+      <p>O Pokémon elétrico mais famoso do mundo Pokémon.</p>
+    </div>
+
+    <!-- Personagem 2 -->
+    <div class="character" onclick="openModal('charizard')">
+      <img src="imagens/maxresdefault.jpg" alt="Charizard" class="character-image">
+      <h2>Charizard</h2>
+      <p>O poderoso Pokémon de fogo e voador.</p>
+    </div>
+
+    <!-- Personagem 3 -->
+    <div class="character" onclick="openModal('bulbasaur')">
+      <img src="imagens/images.jpeg" alt="Bulbasaur" class="character-image">
+      <h2>Bulbasaur</h2>
+      <p>O Pokémon de planta e veneno que começa a jornada de Ash.</p>
+    </div>
+
+    <!-- Personagem 4 -->
+    <div class="character" onclick="openModal('jigglypuff')">
+      <img src="imagens/jingli.jpeg" alt="Jigglypuff" class="character-image">
+      <h2>Jigglypuff</h2>
+      <p>O Pokémon do tipo normal e fada, famoso por sua habilidade de cantar e fazer os outros dormirem.</p>
+    </div>
+
+    <!-- Personagem 5 -->
+    <div class="character" onclick="openModal('squirtle')">
+      <img src="imagens/squertle.jpeg" alt="Squirtle" class="character-image">
+      <h2>Squirtle</h2>
+      <p>Squirtle é um Pokémon de água e um dos iniciais de Kanto. Ele é o amigo leal de Ash na primeira temporada.</p>
+    </div>
+
+    <!-- Personagem 6 -->
+    <div class="character" onclick="openModal('eevee')">
+      <img src="imagens/evee.jpeg" alt="Eevee" class="character-image">
+      <h2>Eevee</h2>
+      <p>Eevee é conhecido por sua capacidade de evoluir para várias formas diferentes, dependendo do ambiente.</p>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">×</span>
+      <div id="modal-details"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

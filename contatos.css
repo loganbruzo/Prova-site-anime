@@ -1,0 +1,76 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('imagens/Pokebola\ logo.png'); /* Fundo temático Pokémon */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+  
+  h1 {
+    color: #ffcc00; /* Inspirado nas cores Pokémon */
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  label {
+    text-align: left;
+    font-weight: bold;
+    color: #ffcc00;
+  }
+  
+  input, textarea {
+    background-color: #333; /* Fundo escuro */
+    color: #fff;
+    padding: 10px;
+    border: 2px solid #ffcc00;
+    border-radius: 5px;
+  }
+  
+  input::placeholder, textarea::placeholder {
+    color: #aaa;
+  }
+  
+  button {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ffc107;
+    color: #000;
+  }
+  
+  .success-message {
+    background-color: #4caf50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
