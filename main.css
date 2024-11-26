@@ -1,0 +1,102 @@
+/* Estilos gerais da seção .main */
+.main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1440px;
+}
+
+/* Estilos para a primeira imagem */
+.imagem123 {
+    position: absolute;
+    width: 400px;
+    top: 100px;
+    left: 50px;
+}
+
+/* Estilos para a segunda imagem */
+.imagem1234 {
+    width: 350px;
+    position: absolute;
+    top: 200px;
+    right: 100px;
+}
+
+/* Estilos da seção de informações dentro de .main */
+.main__info {
+    width: 100%;
+    max-width: 570px;
+}
+
+/* Estilos para o parágrafo dentro de .main__info */
+.main__info p {
+    font-size: 9px;
+    margin: 20px 0 28px;
+}
+
+/* Estilos para o contêiner de botões e links dentro de .main__info */
+.main__info div {
+    display: flex;
+    column-gap: 32px;
+}
+
+/* Estilos para os links e botões dentro de .main__info */
+.main__info div a, 
+.main__info div button {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+/* Estilos específicos para os links dentro de .main__info */
+.main__info div a {
+    background: var(--red); /* Usando variável de cor para consistência */
+}
+
+/* Estilos específicos para os botões dentro de .main__info */
+.main__info div button {
+    background: transparent;
+    border: 1px solid var(--yellow); /* Usando variável de cor para consistência */
+}
+
+
+
+
+
+/* Estilos para a primeira imagem */
+.imagem123 {
+    position: absolute;
+    width: 400px;
+    top: 100px; /* Distância reduzida da parte superior */
+    right: 200px;
+}
+
+/* Estilos da seção de informações dentro de .main */
+.main__info {
+    width: 100%;
+    max-width: 570px;
+    padding-top: 450px; /* Ajuste o valor conforme necessário para espaço adequado */
+    position: relative;
+}
+
+/* Estilos para o parágrafo dentro de .main__info */
+.main__info p {
+    font-size: 16px; /* Ajuste o tamanho da fonte para ser mais legível */
+    margin: 20px 0 28px;
+}
+
+/* Ajustando a posição do texto */
+.main__info {
+    margin-top: 50px; /* Distância entre o logo e o texto */
+
+
+
+
+

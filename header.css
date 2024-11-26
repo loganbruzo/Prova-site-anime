@@ -1,0 +1,98 @@
+/* Estilos do Header */
+header {
+    display: flex;
+    align-items: center;
+    column-gap: 64px;
+    top: 1px;
+    width: 100%;
+    max-width: 1440px;
+    position: absolute;
+}
+
+/* Ajuste para o logo */
+.home1 {
+    position: absolute;
+    left: 30px;
+}
+
+/* Estilos para a imagem dentro do header */
+header img {
+    width: 70px;
+    height: auto;
+}
+
+/* Estilos para o menu de navegação */
+.navigation {
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+}
+
+/* Estilos dos links da navegação */
+.navigation__link {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    transition: color 0.4s;
+}
+
+/* Estilo de hover para os links de navegação */
+.navigation__link:hover {
+    color: var(--red); /* Usando variável de cor para consistência */
+}
+
+/* Efeito de underline nos links de navegação */
+.navigation__link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 60%;
+    height: 1px;
+    background: var(--red); /* Usando variável de cor para consistência */
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s;
+}
+
+/* Transformação do underline no hover */
+.navigation__link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.4s;
+}
+
+/* Estilos para os ícones sociais no header */
+.navigation__social {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+    transition: all 0.4s;
+    margin-top: 10px; /* Ajuste para descer um pouco os ícones */
+    margin-left: 400px; /* Isso pode ser ajustado se necessário */
+}
+
+/* Estilos para os ícones sociais */
+.navigation__social svg {
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+    transition: opacity 0.4s, transform 0.4s;
+}
+
+/* Efeito de hover nos ícones sociais */
+.navigation__social svg:hover {
+    opacity: 1;
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+/* Estilo geral para a aplicação (pode ser ajustado) */
+.app {
+    position: absolute;
+    top: 100px;
+}
+
+

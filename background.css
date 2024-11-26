@@ -1,0 +1,40 @@
+/* Estilos para o fundo de vídeo fixo */
+#background {
+    position: fixed;
+    inset: 0; /* Atalho para top, right, bottom, left */
+    z-index: -1; /* Coloca o fundo abaixo de outros conteúdos */
+    width: 100%;
+    height: 100vh; /* 100% da altura da tela */
+}
+
+#background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que o vídeo cubra o fundo completamente */
+}
+
+/* Estilos para o contêiner do fundo com vídeo */
+.background {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Ajuste conforme necessário */
+    overflow: hidden; /* Impede que qualquer conteúdo transborde */
+}
+
+/* Estilo de vídeo (pode ser reutilizado ou no caso de outras instâncias de vídeo) */
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Preenche o espaço com o vídeo sem distorcer */
+}
+
+/* Estilo para sobreposição escura no vídeo */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Escurece o vídeo com preto semi-transparente */
+    pointer-events: none; /* Permite interação com elementos acima da sobreposição */
+}
